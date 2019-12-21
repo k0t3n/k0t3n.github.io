@@ -1,5 +1,5 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -9,50 +9,46 @@ plugins:
 permalink: /:year/:month/:day/:title/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       layout: "post"
 
 projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
+  sort_by: stars
+  limit: 3
   exclude:
     archived: false
-    forks: true
-    projects:
-    # - repo-name
+    forks: false
 
-# social_media:
+social_media:
+  telegram: k0t3n
+  instagram: k0t3n
+  twitter: k0t3n
+  vk: k0t3n
+  linkedin: k0t3n
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
-  # instagram: your_username
   # keybase: your_username
-  # linkedin: your_username
   # mastodon: your_username
   # medium: your_username
   # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
   # unsplash: your_username
-  # vk: your_username
   # website: http://your_website_url
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png
 
-  - name: Web design
+  - name: Django
+    web_url: https://github.com/topics/django
+    image_url: http://sharelink.ru/media/uploads/blazer/2018/04/23/django-logo.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: devops
+    web_url: https://github.com/topics/devops
+    image_url: https://cdn1.iconfinder.com/data/icons/devops-cycle/256/devops_cycle_1_filled-512.png
